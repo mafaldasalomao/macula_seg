@@ -22,7 +22,7 @@ def segmenta_img(img, modelo_teste):
   predicao = np.squeeze(predicao, axis=-1)
   return predicao
 
-#for de 0.0 ate 1.0 para limiar
+#for de 0.0 ate 1.0 para determinar o melhor limiar
 
 
 

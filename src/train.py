@@ -1,6 +1,6 @@
 from model import modelo_unet
 from utils import dice_coef, dice_coef_loss, iou
-from tensorflow.keras.optimizers import Adam
+from keras.optimizers import Adam
 from dataset import carregar_dataset, carregar_imagens, embaralha, tf_dataset, criar_diretorio, novas_imagens
 import os
 

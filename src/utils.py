@@ -17,6 +17,8 @@ def dice_coef(y_true, y_pred, smooth=1):
 """ Dice Coefficient Loss """
 def dice_coef_loss(y_true, y_pred):
     return 1 - dice_coef(y_true, y_pred)
+
+
 def plot_images(imgs_geradas, masks_geradas):
 
     for i in range(10):

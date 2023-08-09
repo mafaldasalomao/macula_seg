@@ -1,9 +1,9 @@
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Conv2DTranspose, BatchNormalization, Dropout, Lambda, ReLU
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import Activation, MaxPool2D, Concatenate
-from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping, TensorBoard, ReduceLROnPlateau, CSVLogger
-from tensorflow.keras.metrics import Recall, Precision
+from keras.models import Model
+from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Conv2DTranspose, BatchNormalization, Dropout, Lambda, ReLU
+from keras.optimizers import Adam
+from keras.layers import Activation, MaxPool2D, Concatenate
+from keras.callbacks import ModelCheckpoint, EarlyStopping, TensorBoard, ReduceLROnPlateau, CSVLogger
+from keras.metrics import Recall, Precision
 
 def bloco_conv(input, num_filters):
     x = Conv2D(num_filters, 3, padding="same")(input)
